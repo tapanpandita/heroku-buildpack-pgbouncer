@@ -74,7 +74,7 @@ EOFEOF
 EOFEOF
 
   cat >> /app/vendor/pgbouncer/pgbouncer.ini << EOFEOF
-$DB_NAME= port=610${n}
+$DB_NAME = host=$DB_HOST port=$DB_PORT
 EOFEOF
 
   let "n += 1"
